@@ -11,13 +11,13 @@ export default function ProductPhoto() {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                    ডিজিটাল প্রোডাক্ট ম্যানেজমেন্ট!
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>সফটওয়্যার ও ডিজিটাল প্রোডাক্ট ম্যানেজমেন্টের কোয়ালিফিকেশন অর্জন করুন। Pathao-এর হেড অফ প্রোডাক্ট আহমেদ ফাহাদকে এ কোর্সে পাচ্ছেন আপনার ইন্সট্রাক্টর হিসাবে।</p>
                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
+                        <div className="badge badge-outline">ডিজিটাল</div>
+                        <div className="badge badge-outline">ম্যানেজমেন্ট</div>
                     </div>
                 </div>
             </div>
@@ -29,13 +29,13 @@ export default function ProductPhoto() {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                    ডিজিটাল প্রোডাক্ট ম্যানেজমেন্ট
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>সফটওয়্যার ও ডিজিটাল প্রোডাক্ট ম্যানেজমেন্টের কোয়ালিফিকেশন অর্জন করুন। Pathao-এর হেড অফ প্রোডাক্ট আহমেদ ফাহাদকে এ কোর্সে পাচ্ছেন আপনার ইন্সট্রাক্টর হিসাবে।</p>
                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
+                        <div className="badge badge-outline">E Commarce </div>
+                        <div className="badge badge-outline">F Commarce</div>
                     </div>
                 </div>
             </div>
@@ -47,13 +47,13 @@ export default function ProductPhoto() {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                    ডেটা অ্যানালিটিক্স!
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>Data-driven প্রবলেম সলভিংয়ের কনফিডেন্স অর্জন করুন। ডেটা সায়েন্স ও অ্যানালিটিক্সের ইন্ডাস্ট্রি-স্ট্যান্ডার্ড প্র্যাকটিসগুলো আয়ত্ত করুন একেবারে বিগিনার লেভেল থেকে।</p>
                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
+                        <div className="badge badge-outline">Data</div>
+                        <div className="badge badge-outline">Analysis</div>
                     </div>
                 </div>
             </div>
