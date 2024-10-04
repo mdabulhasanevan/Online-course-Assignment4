@@ -31,16 +31,18 @@ export default function Navbar() {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><Link to="/public">Public</Link></li>
-                            <li><Link to="/private">Private</Link></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/products">Products</Link></li>
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost text-xl">Auth Site</Link>
+                    <Link to="/" className="btn btn-ghost text-xl">
+                    <img className='w-14 rounded shadow-lg' src="https://www.alleducationschools.com/wp-content/themes/alleducationschools/assets/images/AES_logo.svg"/>
+                    EduOnline </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link to="/public">Public</Link></li>
-                        <li><Link to="/private">Private</Link></li>
+                    <li ><Link to="/" className="btn bg-purple-400 hover:bg-stone-50">Home</Link></li>
+                    <li ><Link to="/products" className="btn bg-emerald-200 hover:bg-stone-50">Products</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -58,7 +60,7 @@ export default function Navbar() {
                             </>
 
                         ):
-                        (<Link to="/login" className="btn">Login</Link>)
+                        (<Link to="/login" className="btn bg-orange-400">Login/Signup</Link>)
                     }
 
                 </div>

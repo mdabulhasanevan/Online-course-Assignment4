@@ -22,11 +22,12 @@ const router = createBrowserRouter([
                 element: <PublicPage />,
             },
             {
-                path: "/private",
-                element: 
-                <PrivateRoute>
-                    <PrivatePage />
-                </PrivateRoute>
+                path: "/products",
+                element: (
+                    <PrivateRoute>
+                        <PrivatePage />
+                    </PrivateRoute>
+                ),
             },
 
         ],
