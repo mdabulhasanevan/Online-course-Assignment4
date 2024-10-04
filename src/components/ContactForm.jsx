@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ContactForm() {
     return (
-        <div className='mt-2'>
+        <div className='mt-2 mb-2'>
             <h2 className='font-bold p-5'>Contact Form</h2>
             <label className="input input-bordered flex items-center gap-2">
                 <input type="text" className="grow" placeholder="Name" />

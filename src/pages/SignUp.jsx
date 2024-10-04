@@ -35,7 +35,7 @@ const SingUp = () => {
                     }).then(() => {
                         // Profile updated!
                         setErr("");
-                        navigate("/");
+                        navigate("/products");
                     });
                 })
                 .catch((error) => {
@@ -51,14 +51,14 @@ const SingUp = () => {
 
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            navigate("/");
+            navigate("/products");
         }
     });
 
     return (
         <div id="singup">
             <div className="singup">
-                <h2>Create a account!</h2>
+                <h2 className="text-center font-bold">Create an account!</h2>
                 <div className="card-body">
                     <div className="form-control">
                         <input onChange={(e) => setName(e.target.value)} type="text" className="input input-bordered" required placeholder="Enter your name" />
@@ -72,7 +72,7 @@ const SingUp = () => {
                     </div>
                     <button onClick={handleSubmit} className="input input-bordered" required> Singup</button>
                 </div>
-                <Link className="text-lime-500" to="/login">You have already account? Singin</Link>
+                <Link className="text-center hover:cursor-pointer text-lime-500" to="/login">You have already account? Singin</Link>
             </div>
         </div>
     );

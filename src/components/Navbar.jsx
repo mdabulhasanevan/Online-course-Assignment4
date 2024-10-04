@@ -40,7 +40,7 @@ export default function Navbar() {
                     EduOnline </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 flex gap-2">
                     <li ><Link to="/" className="btn bg-purple-400 hover:bg-stone-50">Home</Link></li>
                     <li ><Link to="/products" className="btn bg-emerald-200 hover:bg-stone-50">Products</Link></li>
                     </ul>
