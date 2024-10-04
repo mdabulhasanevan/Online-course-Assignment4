@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <div className='-mt-5'>
+        <div className=''>
             <div className="hero "
                 style={{
                     backgroundImage: "url(https://goedu.ac/wp-content/uploads/2024/03/Confidence-Students-at-GoEdu-Online-Learning-Platform-Best-Online-Learning-Platform-In-Bangladesh-2.webp)",
