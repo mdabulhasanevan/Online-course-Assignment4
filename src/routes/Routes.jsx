@@ -39,7 +39,7 @@ const router = createBrowserRouter([
                     </PrivateRoute>
 
                 ),
-                loader: ({ params }) => fetch(`https://course2-lrvhel0hl-mdabulhasanevans-projects.vercel.app/course/${params.id}`),
+                loader: ({ params }) => fetch(`https://course-hodl1rfv4-mdabulhasanevans-projects.vercel.app/course/${params.id}`),
 
             },
 

@@ -6,7 +6,7 @@ const PrivatePage = () => {
 
     useEffect(() => {
         fetch(
-            `https://course2-lrvhel0hl-mdabulhasanevans-projects.vercel.app/course`
+            `https://course-hodl1rfv4-mdabulhasanevans-projects.vercel.app/course`
         )
             .then((res) => res.json())
             .then((data) => setCategories(data));
