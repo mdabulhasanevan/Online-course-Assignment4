@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import LoginLayout from "../layout/LoginLayout";
 import PrivateRoute from "./PrivateRoute";
 import SingUp from "../pages/SignUp";
+import ProductDetailPage from "../pages/ProductDetailPage";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,17 @@ const router = createBrowserRouter([
                         <PrivatePage />
                     </PrivateRoute>
                 ),
+            },
+            {
+                path: "/productDetails/:id",
+                element: (
+                    <PrivateRoute>
+                        <ProductDetailPage></ProductDetailPage>
+                    </PrivateRoute>
+
+                ),
+                loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`),
+
             },
 
         ],
