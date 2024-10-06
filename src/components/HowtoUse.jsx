@@ -8,22 +8,24 @@ export default function HowtoUse() {
                 <div className="font-bold collapse-title bg-primary text-primary-content  peer-checked:text-secondary-content">
                     কিভাবে আমার সাইটটি কাজ করে
                 </div>
-                <div className="collapse-content bg-primary text-primary-content  peer-checked:text-secondary-content">
-                    <p>একেবারে বেসিক থেকে অ্যাডভান্সড লেভেল পর্যন্ত সবকিছু আপনি ধাপে ধাপে শিখবেন আমাদের ক্যারিয়ার ট্র্যাকগুলোতে। এর জন্য করবেন রিয়েল লাইফ প্রজেক্ট, যা জব ও ফ্রিল্যান্সিং মার্কেটে কাজ করার কনফিডেন্স এনে দেবে আপনাকে।
-                    <h2>We use following Technology to develop this website</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>Tailwind</li>
-                            <li>Daisyui</li>
-                            <li>React</li>
-                            <li>FireBase</li>
-                            <li>ExpressJS</li>
-                            <li>CORS</li>
-                           
-                        </ul>
-                    </p>
-                </div>
+                <div className="collapse-content bg-slate-100-400 p-5  ">
+
+                    
+                    <ul className="steps">
+                        <li className="step step-secondary">HTML</li>
+                        <li className="step step-primary">Tailwind</li>
+                        <li className="step step-secondary">Daisyui</li>
+                        <li className="step step-primary">React</li>
+                        <li className="step step-success">FireBase</li>
+                        <li className="step step-primary">ExpressJS</li>
+                        <li className="step">CORS</li>
+                        <li className="step">Netlify</li>
+                        <li className="step">Vercel</li>
+                    </ul>
+
+               
             </div>
         </div>
+        </div >
     )
 }

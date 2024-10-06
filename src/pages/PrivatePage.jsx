@@ -6,7 +6,7 @@ const PrivatePage = () => {
 
     useEffect(() => {
         fetch(
-            `https://server4-mdabulhasanevan-mdabulhasanevans-projects.vercel.app/course`
+            `https://assignment-4-online-course-project-server-side.vercel.app/course`
         )
             .then((res) => res.json())
             .then((data) => setCategories(data));
@@ -24,7 +24,7 @@ const PrivatePage = () => {
 
                             <div key={course._id} className="card bg-base-100 shadow-xl">
                                 <figure>
-                                    <img
+                                    <img className="w-screen h-60"
                                         src={course.img_url}
                                         alt="Shoes" />
                                 </figure>

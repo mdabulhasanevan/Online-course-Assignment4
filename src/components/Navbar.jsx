@@ -10,8 +10,8 @@ export default function Navbar() {
         logOutuser();
       };
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className=''>
+            <div className="navbar bg-green-100 rounded-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,8 +41,8 @@ export default function Navbar() {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex gap-2">
-                    <li ><Link to="/" className="btn bg-purple-400 hover:bg-stone-50">Home</Link></li>
-                    <li ><Link to="/products" className="btn bg-emerald-200 hover:bg-stone-50">Products</Link></li>
+                    <li ><Link to="/" className="btn btn-outline btn-primary">Home</Link></li>
+                    <li ><Link to="/products" className="btn btn-outline btn-secondary">Products</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -53,7 +53,7 @@ export default function Navbar() {
                                     {/* <img src={`${user?.photoURL}`} /> */}
                                     <img src={user?.photoURL} className="w-7 rounded-full" />
                                     <span>{user?.displayName}</span>
-                                    <button onClick={handleLogout} className="btn">
+                                    <button onClick={handleLogout} className="btn btn-sm btn-error">
                                         Logout
                                     </button>
                                 </div>

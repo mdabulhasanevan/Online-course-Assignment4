@@ -5,7 +5,8 @@ import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "firebas
 import app from "../../public/firebase/Firebase.config";
 
 const Login = () => {
-  const { loginWithGoogle } = useContext(AuthContext);
+  const { loginWithGoogle, loginWithGithub } = useContext(AuthContext);
+
   const navigate = useNavigate();
 
   const auth = getAuth(app);
@@ -63,17 +64,24 @@ const Login = () => {
         console.error(error);
       });
   };
+
+  //github
+  const handelGithubLogin = () => {
+    console.log("helloo");
+    loginWithGithub()
+      .then((res) => {
+        console.log(res);
+        navigate("/products");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
   return (
     <div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Login now!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
-            </p>
-          </div>
+
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
           <div className="card-body"> 
             <div className="form-control">
@@ -98,7 +106,11 @@ const Login = () => {
               </div>
               <div className="form-control mt-6">
                 <button onClick={handelGoogleLogin} className="btn btn-success">Login with Google</button>
-              </div>
+<br></br>
+                <button onClick={handelGithubLogin} className="btn btn-secondary">Login with Github</button>
+              
+              
+                </div>
 
               </div> 
           </div>
