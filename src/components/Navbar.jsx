@@ -8,10 +8,10 @@ export default function Navbar() {
     const { user, logOutuser } = useContext(AuthContext);
     const handleLogout = () => {
         logOutuser();
-      };
+    };
     return (
         <div className=''>
-            <div className="navbar bg-green-100 rounded-lg">
+            <div className="navbar bg-lime-200 rounded">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,13 +36,13 @@ export default function Navbar() {
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost text-xl">
-                    <img className='w-14 rounded shadow-lg' src="https://www.alleducationschools.com/wp-content/themes/alleducationschools/assets/images/AES_logo.svg"/>
-                    EduOnline </Link>
+                        <img className='w-14 rounded shadow-lg' src="https://www.alleducationschools.com/wp-content/themes/alleducationschools/assets/images/AES_logo.svg" />
+                        EduOnline </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex gap-2">
-                    <li ><Link to="/" className="btn btn-outline btn-primary">Home</Link></li>
-                    <li ><Link to="/products" className="btn btn-outline btn-secondary">Products</Link></li>
+                        <li ><Link to="/" className="btn btn-outline btn-primary">Home</Link></li>
+                        <li ><Link to="/products" className="btn btn-outline btn-secondary">Products</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -59,8 +59,13 @@ export default function Navbar() {
                                 </div>
                             </>
 
-                        ):
-                        (<Link to="/login" className="btn bg-orange-400">Login/Signup</Link>)
+                        ) :
+                            (
+                                <div>
+                                <Link to="/login" className="btn btn-sm bg-orange-400">Login</Link>
+                                <Link to="/singup" className="btn btn-sm bg-orange-400">Signup</Link>
+                                </div>
+                            )
                     }
 
                 </div>
