@@ -47,15 +47,18 @@ const ProductDetailPage = () => {
                         </div>
 
                         <p><span className='font-bold'>assessments:</span>{courseDetails.assessments}</p>
+                        
+
+                    </div>
+                    <div >
+                        <div className='flex items-center justify-center '>
+                        <img className=' w-10/12 rounded-full' src={courseDetails.author_img_url} alt="author_img_url" />
+                        </div>
+                      
+
                         <div className="card-actions justify-end">
                             <button className="btn btn-primary">Buy Now</button>
                         </div>
-
-                    </div>
-                    <div className='flex items-center justify-center '>
-                        <img className=' w-10/12 rounded-full' src={courseDetails.author_img_url} alt="author_img_url" />
-
-
 
                     </div>
                 </div>

@@ -79,11 +79,12 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero bg-base-200 ">
+        <div className="">
 
-          <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <div className="card-body"> 
+          <div className="card bg-base-100   shadow-2xl">
+          <div className="card-body w-auto"> 
+            <h1 className="font-bold text-center">Login</h1>
             <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -102,7 +103,7 @@ const Login = () => {
               </div>
               <div className="form-control mt-6">
                 <button onClick={handleSubmit} className="btn btn-primary">Login</button>
-                <Link  to="/singup">You have don't account? Singup</Link>
+                <Link  to="/singup" className="text-blue-700">You have don't account? Singup</Link>
               </div>
               <div className="form-control mt-6">
                 <button onClick={handelGoogleLogin} className="btn btn-success">Login with Google</button>
